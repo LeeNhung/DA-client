@@ -13,7 +13,7 @@ import com.example.model.Contact;
 @RequestMapping("/contact")
 public class ContactController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
+	private String url="https://da-server-production.up.railway.app";
 	
 	@GetMapping
 	private String getContact(Model model) {
