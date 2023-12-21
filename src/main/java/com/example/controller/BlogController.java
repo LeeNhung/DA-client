@@ -26,7 +26,7 @@ import jakarta.servlet.http.HttpSession;
 @RequestMapping("/blog")
 public class BlogController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
+	private String url="https://da-server-production.up.railway.app";
 	@GetMapping
 	private String getListBlog(HttpSession session,
 			@RequestParam(name="pageNum", defaultValue = "1", required = false) int pageNum,
