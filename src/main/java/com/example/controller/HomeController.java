@@ -30,7 +30,7 @@ import jakarta.servlet.http.HttpSession;
 @RequestMapping("/")
 public class HomeController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
+	private String url="https://da-server-production.up.railway.app";
 	@GetMapping
 	private String getHome(HttpServletRequest request, HttpSession session) {
 		List<CategoryWood>listCateWood=Arrays.asList(rest.getForObject(url+"/category-wood/getAll", CategoryWood[].class));
