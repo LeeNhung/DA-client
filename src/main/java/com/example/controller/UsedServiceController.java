@@ -36,8 +36,7 @@ import jakarta.servlet.http.HttpSession;
 @RequestMapping("/usedService")
 public class UsedServiceController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="http://localhost:8082";
-	//private String url="https://da-server2-production.up.railway.app";
+	private String url="https://server-production-2465.up.railway.app";;
 	//kiem tra xem da dang ki su dung dich vu nao chua
 	@GetMapping("/get")
 	private String getListService(HttpSession session) {
