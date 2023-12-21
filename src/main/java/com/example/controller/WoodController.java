@@ -43,9 +43,8 @@ import jakarta.websocket.Session;
 @Controller
 @RequestMapping("/wood")
 public class WoodController {
-	private RestTemplate rest = new RestTemplate();
-	private String url1="http://localhost:8082";
-	//private String url1="https://da-server2-production.up.railway.app";
+	private RestTemplate rest=new RestTemplate();
+	private String url="https://server-production-2465.up.railway.app";
 	@GetMapping("/get")
 	private String get(
 			@RequestParam(name="category", defaultValue = "1", required = false)int category,
