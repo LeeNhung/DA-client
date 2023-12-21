@@ -38,7 +38,7 @@ import jakarta.websocket.Session;
 @RequestMapping("/user")
 public class UserController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
+	private String url="https://da-server-production.up.railway.app";
 	@GetMapping("/register")
 	private String register(Model model){
 		UserDTO userDTO=new UserDTO();
