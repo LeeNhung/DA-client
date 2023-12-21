@@ -229,7 +229,7 @@ public class UserController {
 		System.out.println(urlCur);
 		if(user!=null)
 			session.setAttribute("result","success");
-		return "redirect:"+urlCur;
+		return "redirect:/"+urlCur;
 	}
 	@GetMapping("/gallery")
 	private String getIdentifyIdentify(HttpSession session) {
